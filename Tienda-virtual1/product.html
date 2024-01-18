@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet"/>
+    
+    <!-- Vincula el archivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Tienda Virtual</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- logo -->
+            <div class="search">
+                <div class="logo">
+                  <img src="img/tiendamia-logo.svg" width="218" alt="Logo store" />
+                </div>
+                <!-- formulario de búsqueda -->
+                <div class="form">
+                  <form>
+                    <input type="text" placeholder="Search" />
+                  </form>
+                </div>
+                <!-- redes sociales -->
+                <div class="social">
+                  <!-- Aquí irán los íconos de redes sociales -->
+                </div>
+            </div>
+            
+                <div class="nav">
+                    <ul>
+                      <li><a href="#">Ofertas de la semana</a></li>
+                      <!-- Más elementos de lista aquí -->
+                    </ul>
+                </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="columns-container">
+                <div class=".product-images-block">
+                    <img class="product-image" src="img/mock2.jpg" alt="Macbook Pro"/>
+                </div>
+                <div class=".product-description-block">
+                    <h2 class="title-principal">Apple</h2>
+                    <h3 class="title">MacBook</h3>
+                    <div class="description"> 
+                        <span class="label">Descripción:</span>
+                        <p>MacBook Pro 13" Chip M2 CPU 8 núcleos y GPU 10 núcleos, 8GB RAM, 256GB SSD - Gris Espacial Apple</p>
+                        <h3>Especificaciones principales</h3>
+                        <ul>
+                            <li>Modelo tarjeta de video: GPU de 10 núcleos</li>
+                            <li>Tamaño de la pantalla: 13.3 pulgadas</li>
+                            <li>Disco duro HDD: No tiene</li>
+                            <li>Unidad de estado sólido SSD: 256GB</li>
+                            <li>Núcleos del procesador: No aplica</li>
+                        </ul> 
+
+                    </div>
+                </div>
+                <div class=".product-checkout-block">
+                    <form class="selector">
+                        <fieldset>
+                            <label class="label" for="color">Color</label>
+                            <select id="color" name="color">
+                                <option value="gris">Gris</option>
+                                <option value="plata">Plata</option>
+                                <option value="blanco">Blanco</option>
+                            </select>
+                        </fieldset>
+                    </form>
+
+                    <p>Precio: $750.000</p>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" min="1" value="1">
+                    <button onclick="agregarAlCarrito()">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- bloque ofertas -->
+            <div class="sales-block">
+                <h3>Clientes que vieron este producto también vieron</h3>
+                <div class="container">
+                    <div class="product-container">
+                        <!-- Primer producto -->
+                        <article class="product-card">
+                            <img class="product-img" src="img/mock1.jpg" alt="Macbook Pro"/>
+                            <div class="product-info">
+                                <span class="product-title">Macbook Pro 15'4</span>
+                                <span class="product-description">Space Gray</span>
+                                <div class="product-price-block">
+                                    <span class="price">$750.000</span>
+                                    <span class="discount">50% Off</span>
+                                </div>
+                                <div class="product-tax-policy">
+                                    Incluye impuesto País y percepción AFIP
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Segundo producto -->
+                        <article class="product-card">
+                            <img class="product-img" src="img/mock1.jpg" alt="Macbook Pro"/>
+                            <div class="product-info">
+                                <span class="product-title">Macbook Pro 15'4</span>
+                                <span class="product-description">Space Gray</span>
+                                <div class="product-price-block">
+                                    <span class="price">$750.000</span>
+                                    <span class="discount">50% Off</span>
+                                </div>
+                                <div class="product-tax-policy">
+                                    Incluye impuesto País y percepción AFIP
+                                </div>
+                            </div>
+                        </article>
+                         <!-- Tercero producto -->
+                         <article class="product-card">
+                            <img class="product-img" src="img/mock1.jpg" alt="Macbook Pro"/>
+                            <div class="product-info">
+                                <span class="product-title">Macbook Pro 15'4</span>
+                                <span class="product-description">Space Gray</span>
+                                <div class="product-price-block">
+                                    <span class="price">$750.000</span>
+                                    <span class="discount">50% Off</span>
+                                </div>
+                                <div class="product-tax-policy">
+                                    Incluye impuesto País y percepción AFIP
+                                </div>
+                            </div>
+                        </article>
+                         <!-- Cuarto producto -->
+                         <article class="product-card">
+                            <img class="product-img" src="img/mock1.jpg" alt="Macbook Pro"/>
+                            <div class="product-info">
+                                <span class="product-title">Macbook Pro 15'4</span>
+                                <span class="product-description">Space Gray</span>
+                                <div class="product-price-block">
+                                    <span class="price">$750.000</span>
+                                    <span class="discount">50% Off</span>
+                                </div>
+                                <div class="product-tax-policy">
+                                    Incluye impuesto País y percepción AFIP
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="columns-container">
+                <div class="col">
+                  <ul>
+                    <li class="col-main-item"><a href="#">Ofertas de la semana</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Auticulares</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li class="col-main-item"><a href="#">Cómo comprar</a></li>
+                    <li><a href="#">Formas de pago</a></li>
+                    <li><a href="#">Envios</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li class="col-main-item"><a href="#">Costos y tarifas</a></li>
+                    <li><a href="#">Impuestos</a></li>
+                    <li><a href="#">Facturación</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li class="col-main-item"><a href="#">Mis pedidos</a></li>
+                    <li><a href="#">Pedir nuevamente</a></li>
+                    <li><a href="#">Lista de deseos</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li class="col-main-item"><a href="#">Garantía de Entrega</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="copyright">Curso de HTML + CSS 2024</div>
+        </div>
+    </footer>
+
+    <script>
+        function agregarAlCarrito() {
+            // Obtener el precio y la cantidad del DOM
+            var precio = 50.00; // Puedes obtener esto de tu backend o de donde sea necesario
+            var cantidad = parseInt(document.getElementById("cantidad").value);
+
+            // Calcular el total
+            var total = precio * cantidad;
+
+            // Aquí puedes realizar operaciones adicionales, como agregar al carrito
+            // o enviar la información al servidor, según tus necesidades
+            console.log("Producto agregado al carrito:");
+            console.log("Cantidad: " + cantidad);
+            console.log("Precio total: $" + total.toFixed(2));
+        }
+    </script>
+
+</body>
+</html>
