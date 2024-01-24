@@ -51,7 +51,8 @@ footer {
   height: 62px;
   border-radius: 14px;
   border: none;
-  width: 505px;
+  /*width: 505px;*/
+  width: 400px;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -314,4 +315,92 @@ button:hover {
   border-radius: 5px;
   border: 1px solid #ccc;
   padding: 0 10px;
+}
+
+/* product-description.html */
+/* main */
+.product-images-blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+.thumbnail-container {
+  flex-basis: calc(25% - 10px); /* Tamaño del 25% del contenedor con un espacio de 10px entre miniaturas */
+  margin-bottom: 10px;
+}
+.thumbnail-container img {
+  max-width: 100%;
+  height: auto;
+}
+.title3{
+ font-size:xx-large;
+ justify-content:space-around;
+ margin: 10px;
+}
+
+
+.checkout-container {
+  background-color: #ebebeb; /* Color de fondo claro */
+  padding: 33px; /* Espaciado interno */
+  border-radius: 2px; /* Bordes ligeramente redondeados */
+}
+.checkout-total-label {
+  color: grey; /* Color distintivo para el texto 'Total:' */
+}
+.checkout-total-price {
+  font-size: 28px; /* Tamaño grande para el precio */
+  font-weight: 700; /* Fuente en negrita */
+  margin-top: 10px; /* Espacio por encima del precio */
+}
+.checkout-description {
+  line-height: 20.4px; /* Espaciado de línea para mejorar la legibilidad */
+  word-wrap: break-word; /* Asegura que el texto no desborde el contenedor */
+}
+.checkout-policy-list {
+  list-style-type: none; /* Elimina los marcadores de lista */
+  margin-bottom: 30px; /* Espacio debajo de la lista */
+}
+.checkout-policy-list li {
+  display: flex; /* Alineación horizontal de íconos y texto */
+  margin: 15px 0; /* Espacio entre elementos de la lista */
+}
+.checkout-policy-list li .policy-icon {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+.checkout-policy-list li .policy-icon img {
+  max-width: 30px; /* Ajusta el tamaño máximo del ícono */
+  height: auto;
+}
+
+/* cantidad y agregar carrito */
+.checkout-process .top {
+  display: flex; /* Alinea el input y el botón horizontalmente */
+  margin-bottom: 10px; /* Espacio debajo del grupo superior */
+}
+.checkout-process .top input {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  width: 100px;
+  margin-right: 10px;
+  padding: 0 10px 0 20px;
+  box-sizing: border-box;
+}
+.btn-primary {
+  width: 100%;
+  background: #ff3b3c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+}
+.btn-outline {
+  width: 100%;
+  border: 1px solid #ff3b3c;
+  color: #ff3b3c;
+  font-weight: bold;
+  height: 40px;
+  border-radius: 10px;
 }
