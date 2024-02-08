@@ -371,3 +371,93 @@ footer .container {
   margin-bottom: 42px;
   font-size: 40px;
 }
+
+
+/*página carrito de compras*/
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: white;
+  padding: 10px;
+  
+}
+.card{
+  background:#c9c9c9;
+  margin: auto;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  display: flex; /* Hacer que la tarjeta sea un contenedor flexible */
+  flex-direction: column; /* Alinear los elementos en una columna */
+  flex-grow: 1;
+  height: 400px;
+}
+.price{
+  font-size: x-large;
+}
+.btn-primary{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  width: 90%;
+  margin-left: 20px;
+  text-align: center;
+  margin-top: 180px;
+}
+
+/* Estilos para cada producto en el carrito */
+.product-cart {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+
+.product-cart img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.product-cart .middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-cart .info {
+  margin-bottom: 20px;
+ 
+}
+
+.product-cart .title {
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+.product-cart .description {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.product-cart input {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+.product-cart .price {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
