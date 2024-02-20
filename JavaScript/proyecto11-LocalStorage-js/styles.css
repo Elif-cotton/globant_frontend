@@ -366,6 +366,10 @@ footer .container {
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn-primary {
   width: 100%;
   background: #ff3b3c;
@@ -424,8 +428,8 @@ footer .container {
   font-weight: bold;
   color: white;
   background-color: red;
-  width: 90%;
-  margin-left: 20px;
+  width: 50%;
+  margin-left: 170px;
   text-align: center;
   margin-top: 180px;
 }
@@ -496,4 +500,10 @@ footer .container {
   margin-left: 30px;
   margin-right: 20px;
   margin-top: 10px;
+}
+
+.discount {
+  width: 100px;
+  margin: 1em;
+  font-size: 15px;
 }
