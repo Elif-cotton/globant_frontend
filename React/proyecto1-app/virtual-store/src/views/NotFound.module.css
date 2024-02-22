@@ -4,13 +4,8 @@ html {
   margin: 0;
 }
 
-  main {
-    height: auto;
-    margin: 100px 0;
-  }
-  
-  /* Footer  */
-  footer {
+ /* Footer  */
+ footer {
     min-height: 368px;
     background-color: #7525a7;
   }
@@ -20,7 +15,7 @@ html {
     flex-direction: column;
   }
   
-  .columnsContainer {
+  .columns-container {
     flex: 1;
     display: flex;
     justify-content: space-between;

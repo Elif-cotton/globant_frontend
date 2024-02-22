@@ -40,6 +40,11 @@ header .container {
   padding: 0 10px;
 }
 
+cartIcon {
+  width: 24px;
+  height: 24px;
+}
+
 .nav {
   padding: 10px 0;
 }
