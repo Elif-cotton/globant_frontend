@@ -308,6 +308,8 @@ function Home() {
                 id={each.id}
                 title={each.title}
                 price={each.price}
+                description={each.description}
+                quantity={each.quantity}
                 color={each.colors[0]}
                 image={each.images[0]}
               />
