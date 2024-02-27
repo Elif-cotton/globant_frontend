@@ -1,5 +1,9 @@
+import Description from "../components/Description";
+import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import NavBar from "../components/NavBar";
+import Thumbs from "../components/Thumbs";
+import ToAdd from "../components/ToAdd";
 import styles from "./Product.module.css";
 import { useParams } from "react-router-dom";
 
@@ -372,91 +376,16 @@ function Product() {
       <main>
       <div className="container">
         <div className="columns-container">
-          <div>
-            <div className="product-images-block">
-              <div className="thumbnail-container">
-                <img className="thumbnail" src={product.images[1]} alt="" />
-              </div>
-              <div className="thumbnail-container">
-                <img className="thumbnail" src={product.images[2]} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="thumbnail-container">
-            <img id="selected-thumbnail" src={product.images[0]} alt="" />
-          </div>
-          <div className="product-description-block">
-            <h1 className="title" id="title">
-              {product.title}
-            </h1>
-            <form className="selector">
-              <fieldset>
-                <label className="label" htmlFor="color">Color</label>
-                <select id="color">
-                <option value="" disabled selected>Selecciona un color</option>
-                      {product.colors.map((color, index) => (
-                        <option key={index} value={color}>{color}</option>
-                      ))}
-                </select>
-              </fieldset>
-              <fieldset>
-                <label className="label" htmlFor="size">Tamaño</label>
-                <select id="size">
-                  <option value="" disabled selected>Selecciona un tamaño</option>
-                  <option value="a">Mediano</option>
-                  <option value="a">Grande</option>
-                </select>
-              </fieldset>
-            </form>
-            <div className="description">
-              <span className="label">Descripción</span>
-              <p id="description">
-                {product.description}
-              </p>
-            </div>
-          </div>
+
+          <Thumbs product={product} />
+          <Description product={product} />
+          <ToAdd product={product} />
 
 
-          <div className="product-checkout-block">
-            <div className="checkout-container">
-              <span className="checkout-total-label">Total:</span>
-              <h2 className="checkout-total-price" id="price">${product.price}</h2>
-              <p className="checkout-description">
-                Incluye impuesto PAIS y percepción AFIP. Podés recuperar AR$
-                50711 haciendo la solicitud en AFIP.
-              </p>
-              <ul className="checkout-policy-list">
-                <li>
-                  <span className="policy-icon"><img src="../img/truck.png" alt="Truck"/>
-                    </span>
-                  <span className="policy-desc">
-                    Agrega el producto al carrito para conocer los costos de envío</span>
-                </li>
-                <li>
-                  <span className="policy-icon"
-                    ><img src="../img/plane.png" alt="Plane"
-                  /></span>
-                  <span className="policy-desc"
-                    >Recibí aproximadamente entre 10 y 15 días hábiles,
-                    seleccionando envío normal</span>
-                </li>
-              </ul>
-              <div className="checkout-process">
-                <div className="top">
-                  <input id="input-quantity" type="number" value="1" min="1" />
-                  <button className="btn-primary">Comprar</button>
-                </div>
-                <div className="bottom">
-                  <button className="btn-outline" id="btn-add-to-cart">
-                    Añadir al Carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+        
         </div>
 
-
+        
         <div className="sales-block">
           <div className="sales-title">
             <h2>Productos relacionados</h2>
@@ -537,52 +466,11 @@ function Product() {
           </div>
         </div>
       </div>
+
     </main>
     
-    <footer>
-      <div className="container">
-        <div className="columns-container">
-          <div className="col">
-            <ul>
-              <li className="col-main-item">
-                <a href="#">Ofertas de la semana</a>
-              </li>
-              <li><a href="#">Laptops</a></li>
-              <li><a href="#">Audio</a></li>
-              <li><a href="#">Auticulares</a></li>
-            </ul>
-          </div>
-          <div className="col">
-            <ul>
-              <li className="col-main-item"><a href="#">Cómo comprar</a></li>
-              <li><a href="#">Formas de pago</a></li>
-              <li><a href="#">Envios</a></li>
-              <li><a href="#">Devoluciones</a></li>
-            </ul>
-          </div>
-          <div className="col">
-            <ul>
-              <li className="col-main-item"><a href="#">Costos y tarifas</a></li>
-              <li><a href="#">Impuestos</a></li>
-              <li><a href="#">Facturación</a></li>
-            </ul>
-          </div>
-          <div className="col">
-            <ul>
-              <li className="col-main-item"><a href="#">Mis pedidos</a></li>
-              <li><a href="#">Pedir nuevamente</a></li>
-              <li><a href="#">Lista de deseos</a></li>
-            </ul>
-          </div>
-          <div className="col">
-            <ul>
-              <li className="col-main-item"><a href="#">Garantía de Entrega</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="copyright">Curso de HTML + CSS 2023</div>
-      </div>
-    </footer>
+    <Footer/>
+      
     </>;
 }
 

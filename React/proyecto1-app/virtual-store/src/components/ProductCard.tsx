@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function ProductCard(props) {
     const { id, title, color, price, image, description, quantity } = props;
     return (
-    <Link to={"/product/" + id} className="product-card">
+    <Link to={"/product/" + id} className="product-card" style={{ textDecoration: 'none' }}>
         <img className="product-img" src={image} alt={id}/>
             <div className="product-info">
               <span className="product-title">{title}</span>
