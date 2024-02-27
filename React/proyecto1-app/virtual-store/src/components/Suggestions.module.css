@@ -1,0 +1,17 @@
+.sales-block {
+    margin-top: 80px;
+  }
+  
+  .sales-title h2 {
+    text-align: center;
+    margin-bottom: 42px;
+    font-size: 40px;
+  }
+
+  /* Bloque de productos */
+  .productContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  

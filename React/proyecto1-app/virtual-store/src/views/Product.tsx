@@ -2,6 +2,7 @@ import Description from "../components/Description";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import NavBar from "../components/NavBar";
+import Suggestions from "../components/Suggestions";
 import Thumbs from "../components/Thumbs";
 import ToAdd from "../components/ToAdd";
 import styles from "./Product.module.css";
@@ -320,50 +321,7 @@ function Product() {
                     </div>
                 </main>
 
-                <footer>
-                    <div className="container">
-                      <div className="columns-container">
-                        <div className="col">
-                          <ul>
-                            <li className="col-main-item">
-                              <a href="#">Ofertas de la semana</a>
-                            </li>
-                            <li><a href="#">Laptops</a></li>
-                            <li><a href="#">Audio</a></li>
-                            <li><a href="#">Auticulares</a></li>
-                          </ul>
-                        </div>
-                        <div className="col">
-                          <ul>
-                            <li className="col-main-item"><a href="#">Cómo comprar</a></li>
-                            <li><a href="#">Formas de pago</a></li>
-                            <li><a href="#">Envios</a></li>
-                            <li><a href="#">Devoluciones</a></li>
-                          </ul>
-                        </div>
-                        <div className="col">
-                          <ul>
-                            <li className="col-main-item"><a href="#">Costos y tarifas</a></li>
-                            <li><a href="#">Impuestos</a></li>
-                            <li><a href="#">Facturación</a></li>
-                          </ul>
-                        </div>
-                        <div className="col">
-                          <ul>
-                            <li className="col-main-item"><a href="#">Mis pedidos</a></li>
-                            <li><a href="#">Pedir nuevamente</a></li>
-                            <li><a href="#">Lista de deseos</a></li>
-                          </ul>
-                        </div>
-                        <div className="col">
-                          <ul>
-                            <li className="col-main-item"><a href="#">Garantía de Entrega</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div className="copyright">Curso de HTML + CSS 2023</div>
-                    </div>
-                </footer>
+                <Footer />
           </>
       );
   }
@@ -386,84 +344,14 @@ function Product() {
         </div>
 
         
+
         <div className="sales-block">
           <div className="sales-title">
             <h2>Productos relacionados</h2>
           </div>
-          <div className="product-container">
-            <article className="product-card">
-              <img
-                className="product-img"
-                src="../img/mock1.jpg"
-                alt="Macbook Pro"
-              />
-              <div className="product-info">
-                <span className="product-title">Macbook Pro 15'4</span>
-                <span className="product-description">Space Gray</span>
-                <div className="product-price-block">
-                  <span className="price">$750.000</span>
-                  <span className="discount">50% Off</span>
-                </div>
-                <div className="product-tax-policy">
-                  Incluye impuesto País y percepción AFIP
-                </div>
-              </div>
-            </article>
-            <article className="product-card">
-              <img
-                className="product-img"
-                src="../img/mock1.jpg"
-                alt="Macbook Pro"
-              />
-              <div className="product-info">
-                <span className="product-title">Macbook Pro 15'4</span>
-                <span className="product-description">Space Gray</span>
-                <div className="product-price-block">
-                  <span className="price">$750.000</span>
-                  <span className="discount">50% Off</span>
-                </div>
-                <div className="product-tax-policy">
-                  Incluye impuesto País y percepción AFIP
-                </div>
-              </div>
-            </article>
-            <article className="product-card">
-              <img
-                className="product-img"
-                src="../img/mock1.jpg"
-                alt="Macbook Pro"
-              />
-              <div className="product-info">
-                <span className="product-title">Macbook Pro 15'4</span>
-                <span className="product-description">Space Gray</span>
-                <div className="product-price-block">
-                  <span className="price">$750.000</span>
-                  <span className="discount">50% Off</span>
-                </div>
-                <div className="product-tax-policy">
-                  Incluye impuesto País y percepción AFIP
-                </div>
-              </div>
-            </article>
-            <article className="product-card">
-              <img
-                className="product-img"
-                src="../img/mock1.jpg"
-                alt="Macbook Pro"
-              />
-              <div className="product-info">
-                <span className="product-title">Macbook Pro 15'4</span>
-                <span className="product-description">Space Gray</span>
-                <div className="product-price-block">
-                  <span className="price">$750.000</span>
-                  <span className="discount">50% Off</span>
-                </div>
-                <div className="product-tax-policy">
-                  Incluye impuesto País y percepción AFIP
-                </div>
-              </div>
-            </article>
-          </div>
+          <Suggestions />
+         
+          
         </div>
       </div>
 
